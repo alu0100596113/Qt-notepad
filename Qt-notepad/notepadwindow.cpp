@@ -13,6 +13,9 @@ NotepadWindow::NotepadWindow(QWidget *parent)
     mainMenu_->addMenu(mnuArchivo_);
     setMenuBar(mainMenu_);
 
+//*****
+    //Menu Archivo
+
     actArchivoAbrir_ = new QAction(tr("&Abrir"), this);
     actArchivoAbrir_ ->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_O));
     mnuArchivo_->addAction(actArchivoAbrir_);
@@ -20,6 +23,13 @@ NotepadWindow::NotepadWindow(QWidget *parent)
     actArchivoGuardar_ = new QAction(tr("&Guardar"), this);
     actArchivoGuardar_ ->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_S));
     mnuArchivo_->addAction(actArchivoGuardar_);
+
+    actArchivoCerrar_ = new QAction(tr("&Cerrar"), this);
+    actArchivoCerrar_ ->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_C));
+    mnuArchivo_->addAction(actArchivoCerrar_);
+
+//*****
+    //Menu Editar
 
     mnuEditar_ = new QMenu(tr("&Editar"));
     mainMenu_->addMenu(mnuEditar_);
@@ -32,22 +42,48 @@ NotepadWindow::NotepadWindow(QWidget *parent)
     actEditarPegar_->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_V));
     mnuEditar_->addAction(actEditarPegar_);
 
+    actEditarDeshacer_ = new QAction(tr("&Deshacer"), this);
+    actEditarDeshacer_->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Z));
+    mnuEditar_->addAction(actEditarDeshacer_);
+
+    actEditarRehacer_ = new QAction(tr("&Rehacer"), this);
+    actEditarRehacer_->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Y));
+    mnuEditar_->addAction(actEditarRehacer_);
+
+    actEditarCortar_ = new QAction(tr("&Cortar"), this);
+    actEditarCortar_->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_X));
+    mnuEditar_->addAction(actEditarCortar_);
+
+//*****
+    //Menu formato
+
     mnuFormato_ = new QMenu(tr("&Formato"));
     mainMenu_->addMenu(mnuFormato_);
 
     actFormatoFuente_ = new QAction(tr("&Fuente"), this);
     mnuFormato_->addAction(actFormatoFuente_);
+//*****
+    //Menu Ayuda
 
+    mnuAyuda_ = new QMenu(tr("&Ayuda"));
+    mainMenu_->addMenu(mnuAyuda_);
 
+    actMostrarAyuda_ = new QAction(tr("&Mostrar"), this);
+    mnuAyuda_->addAction(actMostrarAyuda_);
 
+//*****
 
     //Conexiones
     connect(actArchivoAbrir_, SIGNAL(triggered()), this, SLOT(alAbrir()));
     connect(actArchivoGuardar_, SIGNAL(triggered()), this, SLOT (alGuardar()));
+    connect(actArchivoCerrar_, SIGNAL(triggered()), this, SLOT (alCerrar()));
     connect(actEditarCopiar_, SIGNAL(triggered()), txtEditor_, SLOT(copy()));
     connect(actEditarPegar_, SIGNAL(triggered()), txtEditor_, SLOT(paste()));
     connect(actFormatoFuente_, SIGNAL(triggered()), this, SLOT(alFuente()));
-
+    connect(actEditarDeshacer_, SIGNAL(triggered()), txtEditor_, SLOT(undo()));
+    connect(actEditarRehacer_, SIGNAL(triggered()), txtEditor_, SLOT(redo()));
+    connect(actEditarCortar_, SIGNAL(triggered()), txtEditor_, SLOT(cut()));
+    connect(actMostrarAyuda_, SIGNAL(triggered()), this, SLOT(alAyuda()));
 }
 
 
@@ -84,6 +120,21 @@ void NotepadWindow::alAbrir()
     }
 }
 
+void NotepadWindow::alCerrar()
+{
+       QMessageBox msgExit;
+       msgExit.setText("¿Qué desea hacer?");
+       msgExit.addButton("Guardar", QMessageBox::ApplyRole);
+       msgExit.addButton("Salir sin guardar", QMessageBox::NoRole);
+       int option = msgExit.exec(); //Devuelve el entero
+       if(option == 0)
+       {
+           alGuardar();
+       }
+       else if (option == 1)
+           exit(0);
+}
+
 void NotepadWindow::alGuardar()
 {
     QString nombreArchivo;
@@ -110,4 +161,9 @@ void NotepadWindow::alFuente()
         // Si el usuario hizo click en OK, se establece la fuente seleccionada
         txtEditor_->setFont(font);
     }
+}
+
+void NotepadWindow::alAyuda()
+{
+     QMessageBox::information(this, "Ayuda", "Ayuda del programa");
 }

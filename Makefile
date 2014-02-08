@@ -550,6 +550,41 @@ moc_notepadwindow.cpp: ../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMainWindow 
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtouchdevice.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qicon.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QPlainTextEdit \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qplaintextedit.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qtextedit.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qframe.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextdocument.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextoption.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextcursor.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextformat.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qpen.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextlayout.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qglyphrun.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qrawfont.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qfontdatabase.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMenu \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmenu.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qaction.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMenuBar \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmenubar.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QAction \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QFileDialog \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qfiledialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qdir.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qfileinfo.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qdialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/QFile \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QFontDialog \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qfontdialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/QClipboard \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qclipboard.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/QKeySequence \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMessageBox \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmessagebox.h \
 		Qt-notepad/notepadwindow.h
 	/home/carlos/Qt5.2.0/5.2.0/gcc_64/bin/moc $(DEFINES) $(INCPATH) Qt-notepad/notepadwindow.h -o moc_notepadwindow.cpp
 
@@ -679,6 +714,41 @@ main.o: Qt-notepad/main.cpp Qt-notepad/notepadwindow.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtouchdevice.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qicon.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QPlainTextEdit \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qplaintextedit.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qtextedit.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qframe.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextdocument.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextoption.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextcursor.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextformat.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qpen.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextlayout.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qglyphrun.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qrawfont.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qfontdatabase.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMenu \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmenu.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qaction.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMenuBar \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmenubar.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QAction \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QFileDialog \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qfiledialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qdir.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qfileinfo.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qdialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/QFile \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QFontDialog \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qfontdialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/QClipboard \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qclipboard.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/QKeySequence \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMessageBox \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QApplication \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qapplication.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qcoreapplication.h \
@@ -799,7 +869,42 @@ notepadwindow.o: Qt-notepad/notepadwindow.cpp Qt-notepad/notepadwindow.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qvector2d.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtouchdevice.h \
 		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qtabwidget.h \
-		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qicon.h
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qicon.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QPlainTextEdit \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qplaintextedit.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qtextedit.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qframe.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextdocument.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextoption.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextcursor.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextformat.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qpen.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qtextlayout.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qglyphrun.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qrawfont.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qfontdatabase.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMenu \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmenu.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qaction.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMenuBar \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmenubar.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QAction \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QFileDialog \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qfiledialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qdir.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/qfileinfo.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qdialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtCore/QFile \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QFontDialog \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qfontdialog.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/QClipboard \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/qclipboard.h \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtGui/QKeySequence \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/QMessageBox \
+		../../Qt5.2.0/5.2.0/gcc_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o notepadwindow.o Qt-notepad/notepadwindow.cpp
 
 moc_notepadwindow.o: moc_notepadwindow.cpp 

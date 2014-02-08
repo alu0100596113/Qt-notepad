@@ -11,6 +11,7 @@
 #include <QFontDialog>
 #include <QClipboard>
 #include <QKeySequence>
+#include <QMessageBox>
 
 class NotepadWindow : public QMainWindow
 {
@@ -20,17 +21,20 @@ public:
     NotepadWindow(QWidget *parent = 0);
     ~NotepadWindow();
 
-private slots:
+public slots:
+    void alCerrar();
     void alAbrir();
     void alGuardar();
     void alFuente();
-
+    void alAyuda();
 private:
     QMenuBar* mainMenu_;
     QMenu* mnuArchivo_;
     QPlainTextEdit* txtEditor_;
     QAction* actArchivoAbrir_;
     QAction* actArchivoGuardar_;
+    QAction* actArchivoCerrar_;
+
 
     QMenu* mnuFormato_;
     QAction* actFormatoFuente_;
@@ -38,6 +42,12 @@ private:
     QAction* actEditarCopiar_;
     QAction* actEditarPegar_;
     QClipboard * portapapeles_;
+
+    QAction* actEditarDeshacer_;
+    QAction* actEditarRehacer_;
+    QAction* actEditarCortar_;
+    QMenu* mnuAyuda_;
+    QAction* actMostrarAyuda_;
 
 };
 
